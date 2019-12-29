@@ -56,12 +56,8 @@ export default function App() {
   }&gender=male&maxlen=11&amount=25`;
 
   function ScrollToTopOnMount() {
-    useEffect(() => {
       window.scrollTo(0, 0);
-    }, []);
-
-    return null;
-  }
+    }
 
   const getNames = () => {
     async function fetchData() {
@@ -69,6 +65,7 @@ export default function App() {
         const response = await fetch(url);
         const json = await response.json();
         await setNameList(json);
+        ScrollToTopOnMount()
       } catch (e) {
         alert("Too Many Request Try Again Later");
       }
@@ -208,7 +205,6 @@ export default function App() {
           <Route path="/">
             <Navbar toggleDrawer={toggleDrawer} handleAddName={handleAddName} />
             <Drawer toggleDrawer={toggleDrawer} drawerSide={drawerSide} />
-            <ScrollToTopOnMount />
             <NamesList
               handleButton={handleButton}
               handleClick={handleClick}

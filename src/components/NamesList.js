@@ -76,7 +76,7 @@ const NamesList = ({ handleClick, handleButton, handleChecked, nameList }) => {
         size="large"
         color="primary"
         onClick={handleButton}
-        style={{ width: "95%" }}
+        style={{ width: "95%", margin: 10 }}
       >
         {nameList.length > 0 ? "NEXT PAGE" : "GENERATE NAMES"}
       </Button>
