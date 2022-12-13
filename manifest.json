@@ -1,0 +1,8 @@
+{
+    "short_name": "Baby Name App",
+    "name": "Baby Name App",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
