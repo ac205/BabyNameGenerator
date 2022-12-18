@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/BabyNameGenerator/precache-manifest.ed2a2cb25a220f4c3b0e012acd81d613.js"
+  "/BabyNameGenerator/precache-manifest.9be992ac93b5e95a1e96baf8aa3dce92.js"
 );
 
 self.addEventListener('message', (event) => {
